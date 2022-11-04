@@ -13,6 +13,16 @@
 		FE43C38629150344004174E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE43C38429150344004174E9 /* Main.storyboard */; };
 		FE43C38829150346004174E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE43C38729150346004174E9 /* Assets.xcassets */; };
 		FE43C38B29150346004174E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE43C38929150346004174E9 /* LaunchScreen.storyboard */; };
+		FE43C39D29150553004174E9 /* CircularStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39729150480004174E9 /* CircularStd-Black.ttf */; };
+		FE43C39E29150555004174E9 /* CircularStd-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39829150480004174E9 /* CircularStd-BlackItalic.ttf */; };
+		FE43C39F29150558004174E9 /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39929150481004174E9 /* CircularStd-Bold.ttf */; };
+		FE43C3A02915055A004174E9 /* CircularStd-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39529150480004174E9 /* CircularStd-BoldItalic.ttf */; };
+		FE43C3A12915055D004174E9 /* CircularStd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39329150480004174E9 /* CircularStd-Book.ttf */; };
+		FE43C3A22915055F004174E9 /* CircularStd-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39629150480004174E9 /* CircularStd-BookItalic.ttf */; };
+		FE43C3A329150562004174E9 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39429150480004174E9 /* CircularStd-Medium.ttf */; };
+		FE43C3A429150565004174E9 /* CircularStd-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39A29150481004174E9 /* CircularStd-MediumItalic.ttf */; };
+		FEFA172729150BF300934BC5 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA172529150BF300934BC5 /* GalleryViewController.swift */; };
+		FEFA172829150BF300934BC5 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEFA172629150BF300934BC5 /* GalleryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		FE43C38729150346004174E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE43C38A29150346004174E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE43C38C29150346004174E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE43C39329150480004174E9 /* CircularStd-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.ttf"; sourceTree = "<group>"; };
+		FE43C39429150480004174E9 /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.ttf"; sourceTree = "<group>"; };
+		FE43C39529150480004174E9 /* CircularStd-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FE43C39629150480004174E9 /* CircularStd-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BookItalic.ttf"; sourceTree = "<group>"; };
+		FE43C39729150480004174E9 /* CircularStd-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.ttf"; sourceTree = "<group>"; };
+		FE43C39829150480004174E9 /* CircularStd-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.ttf"; sourceTree = "<group>"; };
+		FE43C39929150481004174E9 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.ttf"; sourceTree = "<group>"; };
+		FE43C39A29150481004174E9 /* CircularStd-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FEFA172529150BF300934BC5 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		FEFA172629150BF300934BC5 /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +78,47 @@
 			children = (
 				FE43C37E29150344004174E9 /* AppDelegate.swift */,
 				FE43C38029150344004174E9 /* SceneDelegate.swift */,
-				FE43C38229150344004174E9 /* ViewController.swift */,
+				FE43C39229150454004174E9 /* ViewControllers */,
 				FE43C38429150344004174E9 /* Main.storyboard */,
 				FE43C38729150346004174E9 /* Assets.xcassets */,
 				FE43C38929150346004174E9 /* LaunchScreen.storyboard */,
 				FE43C38C29150346004174E9 /* Info.plist */,
+				FE43C39B29150487004174E9 /* Fonts */,
 			);
 			path = SecureGallery;
+			sourceTree = "<group>";
+		};
+		FE43C39229150454004174E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE43C38229150344004174E9 /* ViewController.swift */,
+				FEFA172529150BF300934BC5 /* GalleryViewController.swift */,
+				FEFA172629150BF300934BC5 /* GalleryViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FE43C39B29150487004174E9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FE43C39C2915048E004174E9 /* Circular */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FE43C39C2915048E004174E9 /* Circular */ = {
+			isa = PBXGroup;
+			children = (
+				FE43C39729150480004174E9 /* CircularStd-Black.ttf */,
+				FE43C39829150480004174E9 /* CircularStd-BlackItalic.ttf */,
+				FE43C39929150481004174E9 /* CircularStd-Bold.ttf */,
+				FE43C39529150480004174E9 /* CircularStd-BoldItalic.ttf */,
+				FE43C39329150480004174E9 /* CircularStd-Book.ttf */,
+				FE43C39629150480004174E9 /* CircularStd-BookItalic.ttf */,
+				FE43C39429150480004174E9 /* CircularStd-Medium.ttf */,
+				FE43C39A29150481004174E9 /* CircularStd-MediumItalic.ttf */,
+			);
+			path = Circular;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +179,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE43C3A329150562004174E9 /* CircularStd-Medium.ttf in Resources */,
+				FEFA172829150BF300934BC5 /* GalleryViewController.xib in Resources */,
+				FE43C3A12915055D004174E9 /* CircularStd-Book.ttf in Resources */,
 				FE43C38B29150346004174E9 /* LaunchScreen.storyboard in Resources */,
+				FE43C3A02915055A004174E9 /* CircularStd-BoldItalic.ttf in Resources */,
 				FE43C38829150346004174E9 /* Assets.xcassets in Resources */,
+				FE43C3A429150565004174E9 /* CircularStd-MediumItalic.ttf in Resources */,
+				FE43C39F29150558004174E9 /* CircularStd-Bold.ttf in Resources */,
+				FE43C3A22915055F004174E9 /* CircularStd-BookItalic.ttf in Resources */,
 				FE43C38629150344004174E9 /* Main.storyboard in Resources */,
+				FE43C39D29150553004174E9 /* CircularStd-Black.ttf in Resources */,
+				FE43C39E29150555004174E9 /* CircularStd-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE43C38329150344004174E9 /* ViewController.swift in Sources */,
+				FEFA172729150BF300934BC5 /* GalleryViewController.swift in Sources */,
 				FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */,
 				FE43C38129150344004174E9 /* SceneDelegate.swift in Sources */,
 			);
