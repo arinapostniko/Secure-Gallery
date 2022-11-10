@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var showButton: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,7 @@ class ViewController: UIViewController {
         textField.alpha = 0
         lockButton.alpha = 0
         showButton.alpha = 0
-        
+
         UIView.animate(withDuration: 1, delay: 1.2, options: .curveEaseInOut, animations: {
             self.textLabel.alpha = 1
             self.textField.alpha = 1
@@ -37,11 +39,11 @@ class ViewController: UIViewController {
             self.lockButton.alpha = 1
         }, completion: { _ in
         })
-        
+
         textField.delegate = self
         lockButton.isEnabled = false
         showButton.isEnabled = false
-        
+
         showButton.setImage(UIImage(systemName: "eye.fill"), for: .normal)
         showButton.setImage(UIImage(systemName: "eye.slash.fill"), for: .selected)
     }
@@ -51,40 +53,40 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-//    func registerKeyboardNotifications() {
-//        NotificationCenter.default.addObserver(
-//            self,
-//            selector: #selector(keyboardWillHide(_:)),
-//            name: UIResponder.keyboardDidHideNotification,
-//            object: nil
-//        )
-//        NotificationCenter.default.addObserver(
-//            self,
-//            selector: #selector(keyboardWillShow(_:)),
-//            name: UIResponder.keyboardWillChangeFrameNotification,
-//            object: nil
-//        )
-//    }
-//
-//    @objc func keyboardWillShow(_ notification: Foundation.Notification) {
-//        guard let userInfo = notification.userInfo else {
-//            return
-//        }
-//
-//        let keyboardSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue.size
-//
-//        let insets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
-//        scrollView.contentInset = insets
-//        scrollView.scrollIndicatorInsets = insets
-//        view.layoutIfNeeded()
-//    }
-//
-//    @objc func keyboardWillHide(_ notification: Foundation.Notification) {
-//        let insets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//        scrollView.contentInset = insets
-//        scrollView.scrollIndicatorInsets = insets
-//        view.layoutIfNeeded()
-//    }
+    func registerKeyboardNotifications() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide(_:)),
+            name: UIResponder.keyboardDidHideNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow(_:)),
+            name: UIResponder.keyboardWillChangeFrameNotification,
+            object: nil
+        )
+    }
+
+    @objc func keyboardWillShow(_ notification: Foundation.Notification) {
+        guard let userInfo = notification.userInfo else {
+            return
+        }
+
+        let keyboardSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue.size
+
+        let insets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+        scrollView.contentInset = insets
+        scrollView.scrollIndicatorInsets = insets
+        view.layoutIfNeeded()
+    }
+
+    @objc func keyboardWillHide(_ notification: Foundation.Notification) {
+        let insets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        scrollView.contentInset = insets
+        scrollView.scrollIndicatorInsets = insets
+        view.layoutIfNeeded()
+    }
 
     // MARK: - IBActions
     @IBAction func unlock(_ sender: Any) {
