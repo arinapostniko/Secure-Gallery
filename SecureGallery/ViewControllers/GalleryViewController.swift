@@ -36,7 +36,6 @@ class GalleryViewController: UIViewController {
             alert.addAction(libraryAction)
         }
         alert.addAction(cancelAction)
-        
         present(alert, animated: true)
     }
     

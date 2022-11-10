@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE3DD9A7291CF6C20048AA95 /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DD9A6291CF6C20048AA95 /* ViewControllerDelegate.swift */; };
 		FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C37E29150344004174E9 /* AppDelegate.swift */; };
 		FE43C38129150344004174E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C38029150344004174E9 /* SceneDelegate.swift */; };
 		FE43C38329150344004174E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C38229150344004174E9 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE3DD9A6291CF6C20048AA95 /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
 		FE43C37B29150344004174E9 /* SecureGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE43C37E29150344004174E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE43C38029150344004174E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE3DD9A8291CF6D10048AA95 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FE43C37E29150344004174E9 /* AppDelegate.swift */,
+				FE43C38029150344004174E9 /* SceneDelegate.swift */,
+				FE3DD9A6291CF6C20048AA95 /* ViewControllerDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		FE43C37229150344004174E9 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +88,7 @@
 		FE43C37D29150344004174E9 /* SecureGallery */ = {
 			isa = PBXGroup;
 			children = (
-				FE43C37E29150344004174E9 /* AppDelegate.swift */,
-				FE43C38029150344004174E9 /* SceneDelegate.swift */,
+				FE3DD9A8291CF6D10048AA95 /* Delegates */,
 				FE43C39229150454004174E9 /* ViewControllers */,
 				FE43C38429150344004174E9 /* Main.storyboard */,
 				FE43C38729150346004174E9 /* Assets.xcassets */,
@@ -201,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3DD9A7291CF6C20048AA95 /* ViewControllerDelegate.swift in Sources */,
 				FE43C38329150344004174E9 /* ViewController.swift in Sources */,
 				FEFA172729150BF300934BC5 /* GalleryViewController.swift in Sources */,
 				FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */,
