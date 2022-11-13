@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class ViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var faceIDButton: UIView!
+    
     // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +34,14 @@ class ViewController: UIViewController {
         textField.alpha = 0
         lockButton.alpha = 0
         showButton.alpha = 0
+        faceIDButton.alpha = 0
 
         UIView.animate(withDuration: 1, delay: 1.2, options: .curveEaseInOut, animations: {
             self.textLabel.alpha = 1
             self.textField.alpha = 1
             self.textField.placeholder = "PIN"
             self.lockButton.alpha = 1
+            self.faceIDButton.alpha = 1
         }, completion: { _ in
         })
 
@@ -105,6 +110,44 @@ class ViewController: UIViewController {
     @IBAction func showPin(_ sender: Any) {
         textField.isSecureTextEntry.toggle()
         showButton.isSelected = !textField.isSecureTextEntry
+    }
+    
+    @IBAction func faceIDUnlock(_ sender: Any) {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(
+            .deviceOwnerAuthenticationWithBiometrics,
+            error: &error
+        ) {
+            let reason = "Use Face ID"
+            
+            context.evaluatePolicy(
+                .deviceOwnerAuthenticationWithBiometrics,
+                localizedReason: reason
+            ) { success, error in
+                DispatchQueue.main.async {
+                    guard success, error == nil else {
+                        let gallery = GalleryViewController()
+                        let navigation = UINavigationController(rootViewController: gallery)
+                        navigation.modalPresentationStyle = .fullScreen
+                        self.present(navigation, animated: true)
+                        self.showAlert(
+                            title: "Error",
+                            message: "Try again"
+                        )
+                        return
+                    }
+                }
+            }
+        } else {
+            if let error {
+                showAlert(
+                    title: "No access",
+                    message: "\(error.localizedDescription)"
+                )
+            }
+        }
     }
     
 }

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE3DD9A7291CF6C20048AA95 /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DD9A6291CF6C20048AA95 /* ViewControllerDelegate.swift */; };
+		FE1E666E292108DF0027F578 /* ViewController + UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1E666D292108DF0027F578 /* ViewController + UIAlert.swift */; };
+		FE3DD9A7291CF6C20048AA95 /* ViewController + UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DD9A6291CF6C20048AA95 /* ViewController + UITextField.swift */; };
 		FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C37E29150344004174E9 /* AppDelegate.swift */; };
 		FE43C38129150344004174E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C38029150344004174E9 /* SceneDelegate.swift */; };
 		FE43C38329150344004174E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C38229150344004174E9 /* ViewController.swift */; };
@@ -27,7 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE3DD9A6291CF6C20048AA95 /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		FE1E666D292108DF0027F578 /* ViewController + UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + UIAlert.swift"; sourceTree = "<group>"; };
+		FE3DD9A6291CF6C20048AA95 /* ViewController + UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + UITextField.swift"; sourceTree = "<group>"; };
 		FE43C37B29150344004174E9 /* SecureGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE43C37E29150344004174E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE43C38029150344004174E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +66,6 @@
 			children = (
 				FE43C37E29150344004174E9 /* AppDelegate.swift */,
 				FE43C38029150344004174E9 /* SceneDelegate.swift */,
-				FE3DD9A6291CF6C20048AA95 /* ViewControllerDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -103,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				FE43C38229150344004174E9 /* ViewController.swift */,
+				FE3DD9A6291CF6C20048AA95 /* ViewController + UITextField.swift */,
+				FE1E666D292108DF0027F578 /* ViewController + UIAlert.swift */,
 				FEFA172529150BF300934BC5 /* GalleryViewController.swift */,
 				FEFA172629150BF300934BC5 /* GalleryViewController.xib */,
 			);
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE3DD9A7291CF6C20048AA95 /* ViewControllerDelegate.swift in Sources */,
+				FE3DD9A7291CF6C20048AA95 /* ViewController + UITextField.swift in Sources */,
+				FE1E666E292108DF0027F578 /* ViewController + UIAlert.swift in Sources */,
 				FE43C38329150344004174E9 /* ViewController.swift in Sources */,
 				FEFA172729150BF300934BC5 /* GalleryViewController.swift in Sources */,
 				FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */,
@@ -366,6 +370,9 @@
 				DEVELOPMENT_TEAM = 767DT3Q3RN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecureGallery/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to use your camera";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -394,6 +401,9 @@
 				DEVELOPMENT_TEAM = 767DT3Q3RN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecureGallery/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to use your camera";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

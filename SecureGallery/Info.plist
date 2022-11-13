@@ -2,8 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>This app wants to use your camera</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CircularStd-Black.ttf</string>
+		<string>CircularStd-BlackItalic.ttf</string>
+		<string>CircularStd-Bold.ttf</string>
+		<string>CircularStd-BoldItalic.ttf</string>
+		<string>CircularStd-Book.ttf</string>
+		<string>CircularStd-BookItalic.ttf</string>
+		<string>CircularStd-Medium.ttf</string>
+		<string>CircularStd-MediumItalic.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -23,18 +32,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app wants to use your photos</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>CircularStd-Black.ttf</string>
-		<string>CircularStd-BlackItalic.ttf</string>
-		<string>CircularStd-Bold.ttf</string>
-		<string>CircularStd-BoldItalic.ttf</string>
-		<string>CircularStd-Book.ttf</string>
-		<string>CircularStd-BookItalic.ttf</string>
-		<string>CircularStd-Medium.ttf</string>
-		<string>CircularStd-MediumItalic.ttf</string>
-	</array>
 </dict>
 </plist>
