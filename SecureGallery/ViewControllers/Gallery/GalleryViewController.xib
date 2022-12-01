@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryViewController" customModule="SecureGallery" customModuleProvider="target">
             <connections>
-                <outlet property="imageView" destination="y92-ti-io2" id="Yhg-cm-boB"/>
+                <outlet property="imageView" destination="lzX-W7-llj" id="bCh-ye-mmu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,11 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y92-ti-io2">
-                    <rect key="frame" x="16" y="75" width="361" height="603"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3q-1i-PXz">
-                    <rect key="frame" x="16" y="728" width="361" height="40"/>
+                    <rect key="frame" x="16" y="728.66666666666663" width="361" height="39.333333333333371"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Add image">
                         <fontDescription key="titleFontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
@@ -33,21 +30,23 @@
                         <action selector="addImage:" destination="-1" eventType="touchUpInside" id="ikH-hh-oPe"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lzX-W7-llj">
+                    <rect key="frame" x="16" y="59" width="361" height="661.66666666666663"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="y92-ti-io2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1sX-Rb-9Gt"/>
-                <constraint firstItem="y92-ti-io2" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="6hs-au-tAH"/>
+                <constraint firstItem="v3q-1i-PXz" firstAttribute="top" secondItem="lzX-W7-llj" secondAttribute="bottom" constant="8" id="0A5-qv-d7T"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="v3q-1i-PXz" secondAttribute="bottom" constant="50" id="FSK-mM-j9H"/>
-                <constraint firstItem="v3q-1i-PXz" firstAttribute="top" secondItem="y92-ti-io2" secondAttribute="bottom" constant="50" id="Nzg-cE-acH"/>
+                <constraint firstItem="lzX-W7-llj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MsK-VH-d8a"/>
                 <constraint firstItem="v3q-1i-PXz" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="QJE-3u-e5m"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y92-ti-io2" secondAttribute="trailing" constant="16" id="TJD-Dt-Qmx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lzX-W7-llj" secondAttribute="trailing" constant="16" id="aOr-bO-74z"/>
+                <constraint firstItem="lzX-W7-llj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dbW-3T-JUV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="v3q-1i-PXz" secondAttribute="trailing" constant="16" id="hqU-DI-Eg5"/>
                 <constraint firstItem="v3q-1i-PXz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="v1o-tF-AJw"/>
-                <constraint firstItem="y92-ti-io2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="w0r-hm-Il5"/>
             </constraints>
-            <point key="canvasLocation" x="138" y="20"/>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

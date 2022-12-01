@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  SecureGallery
 //
 //  Created by Arina Postnikova on 4.11.22.
@@ -8,7 +8,7 @@
 import UIKit
 import LocalAuthentication
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var textLabel: UILabel!

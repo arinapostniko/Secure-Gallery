@@ -7,6 +7,7 @@
 
 
 import UIKit
+import Kingfisher
 
 class GalleryViewController: UIViewController {
 
@@ -27,6 +28,30 @@ class GalleryViewController: UIViewController {
         let libraryAction = UIAlertAction(title: "Photo Library", style: .default) { _ in
             self.showPicker(withSourceType: .photoLibrary)
         }
+        let urlAction = UIAlertAction(title: "URL", style: .default) { _ in
+            let alert = UIAlertController(
+                title: "Load image",
+                message: nil,
+                preferredStyle: .alert
+            )
+            alert.addTextField { (textField) in
+                textField.placeholder = "Enter URL"
+            }
+            alert.addAction(UIAlertAction(
+                title: "OK",
+                style: .default,
+                handler: { [weak alert] (_) in
+                    guard let textField = alert?.textFields?[0] else { return }
+                    if textField.text != nil {
+                        let url = URL(string: textField.text ?? "")
+                        self.imageView.kf.setImage(with: url)
+                    } else { return }
+                    print("Text field: \(String(describing: textField.text))")
+                }))
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            alert.addAction(cancelAction)
+            self.present(alert, animated: true, completion: nil)
+        }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -35,6 +60,7 @@ class GalleryViewController: UIViewController {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             alert.addAction(libraryAction)
         }
+        alert.addAction(urlAction)
         alert.addAction(cancelAction)
         present(alert, animated: true)
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension ViewController: UITextFieldDelegate {
+extension MainViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if textField.text?.count ?? 0 > 4 {
             textField.text?.removeLast()
