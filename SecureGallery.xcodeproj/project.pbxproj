@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A375B80852FB701AF0C337AF /* Pods_SecureGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786C02838EE6288C38BB2D5B /* Pods_SecureGallery.framework */; };
-		FE1558E32936812700ECE2D0 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1558E22936812700ECE2D0 /* GalleryCollectionViewCell.swift */; };
 		FE1E666E292108DF0027F578 /* MainViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1E666D292108DF0027F578 /* MainViewController + Alert.swift */; };
 		FE3DD9A7291CF6C20048AA95 /* MainViewController + TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DD9A6291CF6C20048AA95 /* MainViewController + TextField.swift */; };
+		FE41F3552939F01900C900D9 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41F3532939F01900C900D9 /* GalleryCollectionViewCell.swift */; };
+		FE41F3562939F01900C900D9 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE41F3542939F01900C900D9 /* GalleryCollectionViewCell.xib */; };
 		FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C37E29150344004174E9 /* AppDelegate.swift */; };
 		FE43C38129150344004174E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C38029150344004174E9 /* SceneDelegate.swift */; };
 		FE43C38329150344004174E9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C38229150344004174E9 /* MainViewController.swift */; };
@@ -33,9 +34,10 @@
 		786C02838EE6288C38BB2D5B /* Pods_SecureGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C626286D97FD27A7E04A3 /* Pods-SecureGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureGallery.debug.xcconfig"; path = "Target Support Files/Pods-SecureGallery/Pods-SecureGallery.debug.xcconfig"; sourceTree = "<group>"; };
 		D97E9D8A1F4E8E135D99326A /* Pods-SecureGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureGallery.release.xcconfig"; path = "Target Support Files/Pods-SecureGallery/Pods-SecureGallery.release.xcconfig"; sourceTree = "<group>"; };
-		FE1558E22936812700ECE2D0 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE1E666D292108DF0027F578 /* MainViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + Alert.swift"; sourceTree = "<group>"; };
 		FE3DD9A6291CF6C20048AA95 /* MainViewController + TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + TextField.swift"; sourceTree = "<group>"; };
+		FE41F3532939F01900C900D9 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE41F3542939F01900C900D9 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		FE43C37B29150344004174E9 /* SecureGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE43C37E29150344004174E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE43C38029150344004174E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,24 @@
 				FE43C38029150344004174E9 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FE41F3572939F02700C900D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA172529150BF300934BC5 /* GalleryViewController.swift */,
+				FEFA172629150BF300934BC5 /* GalleryViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FE41F3582939F03600C900D9 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE41F3532939F01900C900D9 /* GalleryCollectionViewCell.swift */,
+				FE41F3542939F01900C900D9 /* GalleryCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		FE43C37229150344004174E9 = {
@@ -179,9 +199,8 @@
 		FECF6CAC293651A100367DE3 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				FEFA172529150BF300934BC5 /* GalleryViewController.swift */,
-				FEFA172629150BF300934BC5 /* GalleryViewController.xib */,
-				FE1558E22936812700ECE2D0 /* GalleryCollectionViewCell.swift */,
+				FE41F3572939F02700C900D9 /* ViewController */,
+				FE41F3582939F03600C900D9 /* CollectionViewCell */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -250,6 +269,7 @@
 				FEFA172829150BF300934BC5 /* GalleryViewController.xib in Resources */,
 				FE43C3A12915055D004174E9 /* CircularStd-Book.ttf in Resources */,
 				FE43C38B29150346004174E9 /* LaunchScreen.storyboard in Resources */,
+				FE41F3562939F01900C900D9 /* GalleryCollectionViewCell.xib in Resources */,
 				FE43C3A02915055A004174E9 /* CircularStd-BoldItalic.ttf in Resources */,
 				FE43C38829150346004174E9 /* Assets.xcassets in Resources */,
 				FE43C3A429150565004174E9 /* CircularStd-MediumItalic.ttf in Resources */,
@@ -315,7 +335,7 @@
 				FE43C38329150344004174E9 /* MainViewController.swift in Sources */,
 				FEFA172729150BF300934BC5 /* GalleryViewController.swift in Sources */,
 				FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */,
-				FE1558E32936812700ECE2D0 /* GalleryCollectionViewCell.swift in Sources */,
+				FE41F3552939F01900C900D9 /* GalleryCollectionViewCell.swift in Sources */,
 				FE43C38129150344004174E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

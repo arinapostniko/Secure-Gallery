@@ -112,7 +112,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="faceIDButton" destination="rpi-Vw-bID" id="x8j-b9-wp5"/>
+                        <outlet property="faceIDButton" destination="ZAs-eu-vHX" id="aOM-eY-hin"/>
                         <outlet property="lockButton" destination="CVX-3o-84Y" id="Skh-j1-bH2"/>
                         <outlet property="scrollView" destination="dvL-7N-lmH" id="hVP-A4-16K"/>
                         <outlet property="showButton" destination="77j-UJ-X7p" id="O2q-x4-VH0"/>

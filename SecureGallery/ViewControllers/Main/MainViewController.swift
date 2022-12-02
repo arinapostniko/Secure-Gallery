@@ -16,12 +16,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var lockButton: UIButton!
-    
     @IBOutlet weak var showButton: UIButton!
+    @IBOutlet weak var faceIDButton: UIButton!
     
     @IBOutlet weak var scrollView: UIScrollView!
-    
-    @IBOutlet weak var faceIDButton: UIView!
     
     // MARK: - Override methods
     override func viewDidLoad() {
@@ -73,6 +71,7 @@ class MainViewController: UIViewController {
         )
     }
 
+    // MARK: - Public methods
     @objc func keyboardWillShow(_ notification: Foundation.Notification) {
         guard let userInfo = notification.userInfo else {
             return
@@ -127,17 +126,15 @@ class MainViewController: UIViewController {
                 localizedReason: reason
             ) { success, error in
                 DispatchQueue.main.async {
-                    guard success, error == nil else {
-                        let gallery = GalleryViewController()
-                        let navigation = UINavigationController(rootViewController: gallery)
-                        navigation.modalPresentationStyle = .fullScreen
-                        self.present(navigation, animated: true)
-                        self.showAlert(
-                            title: "Error",
-                            message: "Try again"
-                        )
-                        return
-                    }
+                    guard success, error == nil else { return }
+                    let gallery = GalleryViewController()
+                    let navigation = UINavigationController(rootViewController: gallery)
+                    navigation.modalPresentationStyle = .fullScreen
+                    self.present(navigation, animated: true)
+                    self.showAlert(
+                        title: "Error",
+                        message: "Try again"
+                    )
                 }
             }
         } else {
