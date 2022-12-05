@@ -26,6 +26,8 @@
 		FE43C3A22915055F004174E9 /* CircularStd-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39629150480004174E9 /* CircularStd-BookItalic.ttf */; };
 		FE43C3A329150562004174E9 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39429150480004174E9 /* CircularStd-Medium.ttf */; };
 		FE43C3A429150565004174E9 /* CircularStd-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE43C39A29150481004174E9 /* CircularStd-MediumItalic.ttf */; };
+		FE9F7A07293CC71A00019C6C /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F7A05293CC71A00019C6C /* PhotoViewController.swift */; };
+		FE9F7A08293CC71A00019C6C /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9F7A06293CC71A00019C6C /* PhotoViewController.xib */; };
 		FEFA172729150BF300934BC5 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA172529150BF300934BC5 /* GalleryViewController.swift */; };
 		FEFA172829150BF300934BC5 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEFA172629150BF300934BC5 /* GalleryViewController.xib */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		FE43C39829150480004174E9 /* CircularStd-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.ttf"; sourceTree = "<group>"; };
 		FE43C39929150481004174E9 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.ttf"; sourceTree = "<group>"; };
 		FE43C39A29150481004174E9 /* CircularStd-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FE9F7A05293CC71A00019C6C /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		FE9F7A06293CC71A00019C6C /* PhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
 		FEFA172529150BF300934BC5 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		FEFA172629150BF300934BC5 /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +154,7 @@
 			children = (
 				FECF6CAB2936519000367DE3 /* Main */,
 				FECF6CAC293651A100367DE3 /* Gallery */,
+				FE9F7A09293CC72300019C6C /* PhotoViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +180,15 @@
 				FE43C39A29150481004174E9 /* CircularStd-MediumItalic.ttf */,
 			);
 			path = Circular;
+			sourceTree = "<group>";
+		};
+		FE9F7A09293CC72300019C6C /* PhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F7A05293CC71A00019C6C /* PhotoViewController.swift */,
+				FE9F7A06293CC71A00019C6C /* PhotoViewController.xib */,
+			);
+			path = PhotoViewController;
 			sourceTree = "<group>";
 		};
 		FECF6CAA2936517B00367DE3 /* Storyboard */ = {
@@ -274,6 +288,7 @@
 				FE43C38829150346004174E9 /* Assets.xcassets in Resources */,
 				FE43C3A429150565004174E9 /* CircularStd-MediumItalic.ttf in Resources */,
 				FE43C39F29150558004174E9 /* CircularStd-Bold.ttf in Resources */,
+				FE9F7A08293CC71A00019C6C /* PhotoViewController.xib in Resources */,
 				FE43C3A22915055F004174E9 /* CircularStd-BookItalic.ttf in Resources */,
 				FE43C38629150344004174E9 /* Main.storyboard in Resources */,
 				FE43C39D29150553004174E9 /* CircularStd-Black.ttf in Resources */,
@@ -335,6 +350,7 @@
 				FE43C38329150344004174E9 /* MainViewController.swift in Sources */,
 				FEFA172729150BF300934BC5 /* GalleryViewController.swift in Sources */,
 				FE43C37F29150344004174E9 /* AppDelegate.swift in Sources */,
+				FE9F7A07293CC71A00019C6C /* PhotoViewController.swift in Sources */,
 				FE41F3552939F01900C900D9 /* GalleryCollectionViewCell.swift in Sources */,
 				FE43C38129150344004174E9 /* SceneDelegate.swift in Sources */,
 			);

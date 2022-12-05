@@ -17,6 +17,9 @@ class GalleryViewController: UIViewController {
     
     var images: [UIImage] = []
     
+    // MARK: - Private properties
+    private var destinationViewController: PhotoViewController? = nil
+    
     // MARK: - IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -165,6 +168,14 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
     // MARK: UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         images.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if destinationViewController == nil {
+            let destination = PhotoViewController()
+            destinationViewController = destination
+        }
+        present(destinationViewController!, animated: true)
     }
     
     // MARK: UICollectionViewDataSource
