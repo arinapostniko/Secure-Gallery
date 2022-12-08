@@ -17,9 +17,6 @@ class GalleryViewController: UIViewController {
     
     var images: [UIImage] = []
     
-    // MARK: - Private properties
-    private var destinationViewController: PhotoViewController? = nil
-    
     // MARK: - IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -171,11 +168,12 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if destinationViewController == nil {
-            let destination = PhotoViewController()
-            destinationViewController = destination
-        }
-        present(destinationViewController!, animated: true)
+        let index = indexPath.row
+        let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+        guard let destinationViewController = storyboard.instantiateViewController(withIdentifier: "PhotoViewController") as? PhotoViewController else { return }
+        destinationViewController.image = images[index]
+        destinationViewController.modalPresentationStyle = .fullScreen
+        present(destinationViewController, animated: true)
     }
     
     // MARK: UICollectionViewDataSource

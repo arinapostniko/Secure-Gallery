@@ -9,10 +9,15 @@ import UIKit
 
 class PhotoViewController: UIViewController {
     
+    // MARK: - Public properties
+    var image = UIImage()
+    
     // MARK: - IBOutlets
-    @IBOutlet public var imageView: UIImageView!
+    @IBOutlet private var imageView: UIImageView!
 
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = image
     }
 }
