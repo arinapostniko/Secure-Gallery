@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  SecureGallery
+
+  Created by Arina Postnikova on 22.12.22.
+  
+*/
+
+"PIN" = "PIN";
+
+"Use Face ID" = "Use Face ID";
+
+"Error" = "Error";
+
+"Try again" = "Try again";
+
+"No access" = "No access";
+
+"Add image" = "Add Image";
+
+"Camera" = "Camera";
+
+"Photo Library" = "Photo Library";
+
+"URL" = "URL";
+
+"Load image" = "Load image";
+
+"Enter URL" = "Enter URL";
+
+"Cancel" = "Cancel";
+
+"Strange" = "Strange";
+
+"You didn't choose any image" = "You didn't choose any image";

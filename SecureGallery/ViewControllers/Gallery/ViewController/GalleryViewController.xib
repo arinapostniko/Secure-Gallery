@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryViewController" customModule="SecureGallery" customModuleProvider="target">
             <connections>
+                <outlet property="addImage" destination="v3q-1i-PXz" id="edx-Ue-n0N"/>
                 <outlet property="collectionView" destination="ZOs-Nm-4Yo" id="g4U-XU-XpC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3q-1i-PXz">
-                    <rect key="frame" x="16" y="728.66666666666663" width="361" height="39.333333333333371"/>
+                    <rect key="frame" x="16" y="764.66666666666663" width="361" height="37.333333333333371"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Add image">
                         <fontDescription key="titleFontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="20"/>
@@ -31,7 +32,7 @@
                     </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ZOs-Nm-4Yo">
-                    <rect key="frame" x="16" y="59" width="361" height="661.66666666666663"/>
+                    <rect key="frame" x="16" y="0.0" width="361" height="756.66666666666663"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aSL-95-1yW">
                         <size key="itemSize" width="128" height="128"/>

@@ -37,7 +37,7 @@ class MainViewController: UIViewController {
         UIView.animate(withDuration: 1, delay: 1.2, options: .curveEaseInOut, animations: {
             self.textLabel.alpha = 1
             self.textField.alpha = 1
-            self.textField.placeholder = "PIN"
+            self.textField.placeholder = NSLocalizedString("PIN", comment: "")
             self.lockButton.alpha = 1
             self.faceIDButton.alpha = 1
         }, completion: { _ in
@@ -119,7 +119,7 @@ class MainViewController: UIViewController {
             .deviceOwnerAuthenticationWithBiometrics,
             error: &error
         ) {
-            let reason = "Use Face ID"
+            let reason = NSLocalizedString("Use Face ID", comment: "")
             
             context.evaluatePolicy(
                 .deviceOwnerAuthenticationWithBiometrics,
@@ -132,15 +132,15 @@ class MainViewController: UIViewController {
                     navigation.modalPresentationStyle = .fullScreen
                     self.present(navigation, animated: true)
                     self.showAlert(
-                        title: "Error",
-                        message: "Try again"
+                        title: NSLocalizedString("Error", comment: ""),
+                        message: NSLocalizedString("Try again", comment: "")
                     )
                 }
             }
         } else {
             if let error {
                 showAlert(
-                    title: "No access",
+                    title: NSLocalizedString("No access", comment: ""),
                     message: "\(error.localizedDescription)"
                 )
             }

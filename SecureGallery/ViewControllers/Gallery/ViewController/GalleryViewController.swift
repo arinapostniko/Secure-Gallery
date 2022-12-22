@@ -20,11 +20,15 @@ class GalleryViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var addImage: UIButton!
+    
     // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
         loadImage()
+        
+        addImage.setTitle(NSLocalizedString("Add image", comment: ""), for: .normal)
     }
     
     // MARK: - Public methods
@@ -87,20 +91,20 @@ class GalleryViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func addImage(_ sender: Any) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
+        let cameraAction = UIAlertAction(title: NSLocalizedString("Camera", comment: ""), style: .default) { _ in
             self.showPicker(withSourceType: .camera)
         }
-        let libraryAction = UIAlertAction(title: "Photo Library", style: .default) { _ in
+        let libraryAction = UIAlertAction(title: NSLocalizedString("Photo Library", comment: ""), style: .default) { _ in
             self.showPicker(withSourceType: .photoLibrary)
         }
-        let urlAction = UIAlertAction(title: "URL", style: .default) { _ in
+        let urlAction = UIAlertAction(title: NSLocalizedString("URL", comment: ""), style: .default) { _ in
             let alert = UIAlertController(
-                title: "Load image",
+                title: NSLocalizedString("Load image", comment: ""),
                 message: nil,
                 preferredStyle: .alert
             )
             alert.addTextField { (textField) in
-                textField.placeholder = "Enter URL"
+                textField.placeholder = NSLocalizedString("Enter URL", comment: "")
             }
             alert.addAction(UIAlertAction(
                 title: "OK",
@@ -121,11 +125,11 @@ class GalleryViewController: UIViewController {
                     } else { return }
                     print("Text field: \(String(describing: textField.text))")
                 }))
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel)
             alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel)
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             alert.addAction(cameraAction)
@@ -153,7 +157,7 @@ extension GalleryViewController: UIImagePickerControllerDelegate, UINavigationCo
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.presentedViewController?.dismiss(animated: true)
-        let alert = UIAlertController(title: "Strange", message: "You didn't choose any image", preferredStyle: .alert)
+        let alert = UIAlertController(title: NSLocalizedString("Strange", comment: ""), message: NSLocalizedString("You didn't choose any image", comment: ""), preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
