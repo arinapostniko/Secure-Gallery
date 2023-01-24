@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
         view.endEditing(true)
     }
     
-    func registerKeyboardNotifications() {
+    private func registerKeyboardNotifications() {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillHide(_:)),

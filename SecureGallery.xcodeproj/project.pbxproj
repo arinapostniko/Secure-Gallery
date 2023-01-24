@@ -96,13 +96,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FE3DD9A8291CF6D10048AA95 /* Delegates */ = {
+		FE3DD9A8291CF6D10048AA95 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				FE43C37E29150344004174E9 /* AppDelegate.swift */,
 				FE43C38029150344004174E9 /* SceneDelegate.swift */,
 			);
-			path = Delegates;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		FE41F3572939F02700C900D9 /* ViewController */ = {
@@ -144,25 +144,15 @@
 		FE43C37D29150344004174E9 /* SecureGallery */ = {
 			isa = PBXGroup;
 			children = (
-				FE3DD9A8291CF6D10048AA95 /* Delegates */,
-				FE43C39229150454004174E9 /* ViewControllers */,
-				FECF6CAA2936517B00367DE3 /* Storyboard */,
-				FE746132295456B40000946C /* Localization */,
-				FE43C38C29150346004174E9 /* Info.plist */,
-				FE43C38729150346004174E9 /* Assets.xcassets */,
-				FE43C39B29150487004174E9 /* Fonts */,
-			);
-			path = SecureGallery;
-			sourceTree = "<group>";
-		};
-		FE43C39229150454004174E9 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
+				FE3DD9A8291CF6D10048AA95 /* Application */,
 				FECF6CAB2936519000367DE3 /* Main */,
 				FECF6CAC293651A100367DE3 /* Gallery */,
 				FE9F7A09293CC72300019C6C /* PhotoViewController */,
+				FE456E1F2980119F00CA8FE8 /* Resources */,
+				FE746132295456B40000946C /* Localization */,
+				FE43C39B29150487004174E9 /* Fonts */,
 			);
-			path = ViewControllers;
+			path = SecureGallery;
 			sourceTree = "<group>";
 		};
 		FE43C39B29150487004174E9 /* Fonts */ = {
@@ -186,6 +176,16 @@
 				FE43C39A29150481004174E9 /* CircularStd-MediumItalic.ttf */,
 			);
 			path = Circular;
+			sourceTree = "<group>";
+		};
+		FE456E1F2980119F00CA8FE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE43C38C29150346004174E9 /* Info.plist */,
+				FE43C38929150346004174E9 /* LaunchScreen.storyboard */,
+				FE43C38729150346004174E9 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FE746132295456B40000946C /* Localization */ = {
@@ -214,19 +214,11 @@
 			path = PhotoViewController;
 			sourceTree = "<group>";
 		};
-		FECF6CAA2936517B00367DE3 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				FE43C38429150344004174E9 /* Main.storyboard */,
-				FE43C38929150346004174E9 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
 		FECF6CAB2936519000367DE3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				FE43C38229150344004174E9 /* MainViewController.swift */,
+				FE43C38429150344004174E9 /* Main.storyboard */,
 				FE746137295458300000946C /* Extensions */,
 			);
 			path = Main;
@@ -539,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 767DT3Q3RN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SecureGallery/Info.plist;
+				INFOPLIST_FILE = SecureGallery/Resources/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to use your camera";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos";
@@ -571,7 +563,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 767DT3Q3RN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SecureGallery/Info.plist;
+				INFOPLIST_FILE = SecureGallery/Resources/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to use your camera";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos";
