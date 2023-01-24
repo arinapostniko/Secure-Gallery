@@ -173,8 +173,7 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.row
-        let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        guard let destinationViewController = storyboard.instantiateViewController(withIdentifier: "PhotoViewController") as? PhotoViewController else { return }
+        let destinationViewController = PhotoViewController(nibName: "PhotoViewController", bundle: nil)
         destinationViewController.image = images[index]
         destinationViewController.modalPresentationStyle = .fullScreen
         present(destinationViewController, animated: true)

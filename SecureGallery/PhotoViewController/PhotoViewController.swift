@@ -20,4 +20,9 @@ class PhotoViewController: UIViewController {
         super.viewDidLoad()
         imageView.image = image
     }
+    
+    // MARK: - IBActions
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
