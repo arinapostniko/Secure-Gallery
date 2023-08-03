@@ -5,7 +5,8 @@ Secure Gallery is an app for secure photo storage.
 ## Screenshots
 
 <p align="left">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 12.27.40.png" width="300">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 12.28.12.png" width="300">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 12.28.22.png" width="300">
+<img src="images/Screenshot 2023-08-03 at 6.09.53 PM.png" width="400">
+<img src="images/Screenshot 2023-08-03 at 6.10.43 PM.png" width="400">
+<img src="images/Screenshot 2023-08-03 at 6.11.51 PM.png" width="400">
+<img src="images/Screenshot 2023-08-03 at 6.10.49 PM.png" width="400">
 </p>
